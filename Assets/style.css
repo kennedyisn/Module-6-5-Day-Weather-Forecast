@@ -1,0 +1,128 @@
+:root {
+    --dashboard: #0404ab;
+    --search: #328bea;
+    --past-search: #989999;
+    --forecast: #16152f;
+    --main-text: #ffffff;
+    --secondary-text: #000000;
+    --border-radius: 0.3rem;
+}
+
+.dash {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1% 2%;
+  color: var(--main-text);
+  background-color: var(--dashboard);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  height: 750px;
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 3px;
+  display: inline-block;
+  width: 160px;
+  height: 225px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: var(--forecast);
+  position: relative;
+}
+
+.daily-display {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+  width: 850px;
+  height: 225px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.search-btn {
+  font-size: 1.3rem;
+  color: #ffffff;
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  background-color: var(--search);
+  box-shadow: 3px 3px var(--dark);
+  transform: translate(-1px, -1px);
+}
+
+.form-input {
+  width: 100%;
+  padding: 3%;
+  margin: 5px 0;
+  font-size: 1.2rem;
+  border: 2px solid var(--forecast);
+  border-radius: var(--border-radius);
+}
+
+.past-searches {
+  font-size: 1.3rem;
+  color: var(--secondary-text);
+  padding: 6px 5px;
+  width: 100%;
+  display: block;
+  margin: 5px 0;
+  border-radius: var(--border-radius);
+  background-color: var(--past-search);
+  transform: translate(-1px, -1px);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.daily-forecastinfo {
+  font-size: 2rem;
+}
+
+li {
+  font-weight: bold;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 3px solid #73AD21;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background-color: var(--forecast);
+}

@@ -17,7 +17,7 @@ There are no steps needed for installation. Simply click the link and go to the 
 
 ## Usage
 
-Simply type in the city that you would like to see the weather forecast for and the 5 day forecast will appear. The webpage is accesible using the link below.
+Simply type in the city that you would like to see the weather forecast for and the 5 day forecast will appear. The webpage is accesible using the link below. 
 https://kennedyisn.github.io/Module-6-5-Day-Weather-Forecast
 The following screenshot shows the web application's appearance:
 

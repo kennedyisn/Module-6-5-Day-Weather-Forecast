@@ -31,7 +31,7 @@ btn.addEventListener("click", function(event) {
 })
 
 function geoFind(city) {
-  var geoUrl =`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
+  var geoUrl =`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`
   fetch(geoUrl) 
     .then(response => response.json())
     .then(data => { 
@@ -46,7 +46,7 @@ function geoFind(city) {
 }
 
 function get5DayWeatherData(lat, lon) {
-    var forecastUrl = `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
+    var forecastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=imperial`
     fetch(forecastUrl)
     .then(response => response.json())
     .then(data => { 
